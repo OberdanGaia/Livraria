@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro de Livros</title>
+</head>
+<body>
+	<form action="livrocontroller" method="POST">
+		Nome do Livro: <input type="text" name="nomeLivro" /><br><br>
+		Quantidade de Páginas: <input type="number" name="qntPag" /><br><br>
+		Tema Livro: <select name="temaLivro">
+			<option value="Tecnico">TÉCNICO</option>
+			<option value="Romance">ROMANCE</option>
+			<option value="Ficcão">FICCÃO</option>
+			<option value="Drama">DRAMA</option>
+		</select> 
+		<br><br>
+		<input type="submit" value="Cadastrar" />
+	</form>
+	<br>
+	<a href='index.html'> Voltar a página inicial</a> 
+</body>
+</html>
