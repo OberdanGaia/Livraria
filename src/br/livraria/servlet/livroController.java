@@ -31,7 +31,7 @@ public class livroController extends HttpServlet {
     	LivroDAO livrodao = new LivroDAO();
     	List<Livro> lista = livrodao.listarTodos();
     	
-    	String html = "<html> <body> <table border='1' >";
+    	String html = "<html><head> <link rel='stylesheet' type='text/css' href='style.css'/> </head> <body><h3>Todos os Livros Cadastrados</h3><table border='1' >";
     	html += "<tr> <td>Id</td> <td>Nome</td> <td>Quantidade de Páginas</td> <td>Tema</td> </tr>";
     	
     	for(Livro livros : lista){

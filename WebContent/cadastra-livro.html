@@ -3,12 +3,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Cadastro de Livros</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+<h3>Cadastro de Livros</h3>
 	<form action="livrocontroller" method="POST">
-		Nome do Livro: <input type="text" name="nomeLivro" /><br><br>
-		Quantidade de Páginas: <input type="number" name="qntPag" /><br><br>
-		Tema Livro: <select name="temaLivro">
+		Nome do Livro: <input type="text" name="nomeLivro" placeholder="Digite o nome do Livro"/><br><br>
+		Quantidade de Páginas: <input type="number" name="qntPag" placeholder="Quantidade de Paginas" /><br><br>
+		Tema do Livro: <select name="temaLivro">
 			<option value="Tecnico">TÉCNICO</option>
 			<option value="Romance">ROMANCE</option>
 			<option value="Ficcão">FICCÃO</option>
